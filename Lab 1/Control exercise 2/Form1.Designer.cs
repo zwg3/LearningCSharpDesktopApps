@@ -1,4 +1,4 @@
-﻿namespace Lab2
+﻿namespace Control_exercise_2
 {
     partial class Form1
     {
@@ -33,19 +33,19 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(41, 32);
+            this.button1.Location = new System.Drawing.Point(332, 198);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(132, 39);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Close Form";
+            this.button1.Text = "GREENPEACE";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Red;
+            this.BackColor = System.Drawing.Color.Green;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -58,7 +58,7 @@
 
         #endregion
 
-        protected System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

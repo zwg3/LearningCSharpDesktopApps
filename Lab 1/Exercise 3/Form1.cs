@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab2
+namespace Exercise_3
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -26,16 +31,7 @@ namespace Lab2
                 new Point(this.Width, 0) });
             Region myRegion = new Region(myPath);
             this.Region = myRegion;
-        }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }
