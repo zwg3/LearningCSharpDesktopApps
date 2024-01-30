@@ -22,7 +22,7 @@ namespace WpfHelloNav
     {
         public Page1()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
