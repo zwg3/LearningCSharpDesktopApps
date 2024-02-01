@@ -11,7 +11,7 @@
     <DockPanel>
         <Menu HorizontalAlignment="Left" VerticalAlignment="Top">
             <MenuItem Header="File">
-                <MenuItem Header="Launch"/>
+                <MenuItem Header="Launch" Command="local:CustomCommands.Launch"/>
                 <MenuItem Header="Exit" Click="MenuItem_Click"/>
             </MenuItem>
             <MenuItem Header="Edit">
