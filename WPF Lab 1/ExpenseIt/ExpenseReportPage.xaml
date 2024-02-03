@@ -8,7 +8,7 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="ExpenseIt - View Expense">
 
-    <Grid>
+    <Grid Margin="0,0,-304,0">
         <Grid.Background>
             <ImageBrush ImageSource="D:\ITMO\С#2\CODE2\WPF Lab 1\ExpenseIt\watermark.png" />
         </Grid.Background>
