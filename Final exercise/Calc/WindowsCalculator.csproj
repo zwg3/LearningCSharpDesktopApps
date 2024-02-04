@@ -97,8 +97,19 @@
     <Compile Include="CalcUI.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Params.cs" />
+    <Compile Include="ParamsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParamsForm.Designer.cs">
+      <DependentUpon>ParamsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Results.cs" />
     <EmbeddedResource Include="CalcUI.resx">
       <DependentUpon>CalcUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParamsForm.resx">
+      <DependentUpon>ParamsForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

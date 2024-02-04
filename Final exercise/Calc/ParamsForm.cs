@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Calculator;
 
-namespace Control_exercise
+namespace SimpleCalculator
 {
-    public partial class ParamInput : Form
+    public partial class ParamsForm : Form
     {
-
         Params p;
         Results r;
         public int A
@@ -31,7 +31,7 @@ namespace Control_exercise
             set { numericUpDown3.Value = value; }
         }
 
-        public ParamInput(Params p, Results r)
+        public ParamsForm(Params p, Results r)
         {
             InitializeComponent();
             this.p = p;
@@ -47,28 +47,26 @@ namespace Control_exercise
 
             if (A == 0)
             {
-                r.Message = "Уравнение линейное";
+                r.Message = "This is a linear equation";
             }
 
             else if (determinant > 0)
             {
-                double root1 = (-B + Math.Sqrt(determinant)) / (2 * A);
-                double root2 = (-B - Math.Sqrt(determinant)) / (2 * A);
-                r.Message = "Уравнение имеет два корня: " + root1 + " и " + root2;
+                double root1 = Math.Round((-B + Math.Sqrt(determinant)) / (2 * A), 2);
+                double root2 = Math.Round((-B - Math.Sqrt(determinant)) / (2 * A), 2);
+                r.Message = "Results: " + root1 + " and " + root2;
             }
             else if (determinant == 0)
             {
-                double root1 = -B / (2 * A);
-                r.Message = "Уравнение имеет один корень: " + root1;
+                double root1 = Math.Round(Convert.ToDouble(-B / (2 * A)), 2);
+                r.Message = "Result: " + root1;
             }
 
             else
             {
-                r.Message = "Уравнение корней не имеет: ";
-
+                r.Message = "No results possible";
             }
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             p.A = this.A;
@@ -77,9 +75,7 @@ namespace Control_exercise
             Calc(A, B, C);
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }
+
