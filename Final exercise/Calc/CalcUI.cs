@@ -181,7 +181,7 @@ namespace SimpleCalculator
             this.VersionInfo.Location = new System.Drawing.Point(8, 27);
             this.VersionInfo.Name = "VersionInfo";
             this.VersionInfo.ReadOnly = true;
-            this.VersionInfo.Size = new System.Drawing.Size(313, 20);
+            this.VersionInfo.Size = new System.Drawing.Size(248, 20);
             this.VersionInfo.TabIndex = 0;
             this.VersionInfo.TabStop = false;
             this.VersionInfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -341,7 +341,7 @@ namespace SimpleCalculator
             this.OutputDisplay.Location = new System.Drawing.Point(8, 57);
             this.OutputDisplay.Name = "OutputDisplay";
             this.OutputDisplay.ReadOnly = true;
-            this.OutputDisplay.Size = new System.Drawing.Size(313, 20);
+            this.OutputDisplay.Size = new System.Drawing.Size(248, 20);
             this.OutputDisplay.TabIndex = 1;
             this.OutputDisplay.TabStop = false;
             this.OutputDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -426,7 +426,7 @@ namespace SimpleCalculator
             this.extraToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(326, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(261, 24);
             this.menuStrip1.TabIndex = 22;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -550,8 +550,8 @@ namespace SimpleCalculator
             // 
             this.AcceptButton = this.KeyZero;
             this.AutoScaleBaseSize = new System.Drawing.Size(8, 19);
-            this.BackColor = System.Drawing.Color.Gainsboro;
-            this.ClientSize = new System.Drawing.Size(326, 283);
+            this.BackColor = System.Drawing.Color.GhostWhite;
+            this.ClientSize = new System.Drawing.Size(261, 283);
             this.Controls.Add(this.KeyCbrt);
             this.Controls.Add(this.KeyFactorial);
             this.Controls.Add(this.KeySquared);
@@ -787,7 +787,7 @@ namespace SimpleCalculator
 
         private void standardToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Size = new Size(277, 314);
+            Size = new Size(277, 322);
         }
 
         private void engineerToolStripMenuItem_Click(object sender, EventArgs e)
