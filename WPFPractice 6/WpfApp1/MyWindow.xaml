@@ -12,7 +12,7 @@
     <Window.Resources>
         <Style TargetType="Button">
             <Style.Triggers>
-                <!--<Trigger Property="IsMouseOver" Value="True">
+                <Trigger Property="IsMouseOver" Value="True">
                     <Trigger.EnterActions>
                         <BeginStoryboard Name="Storyboard">
                             <Storyboard Duration="0:0:1">
@@ -25,8 +25,8 @@
                     <Trigger.ExitActions>
                         <StopStoryboard BeginStoryboardName="Storyboard"/>
                     </Trigger.ExitActions>
-                </Trigger>-->
-                <!--<EventTrigger RoutedEvent="Mouse.MouseEnter">
+                </Trigger>
+                <EventTrigger RoutedEvent="Mouse.MouseEnter">
                     <EventTrigger.Actions>
                         <BeginStoryboard>
                             <Storyboard Duration="0:0:1">
@@ -47,7 +47,7 @@
                              </Storyboard>
                         </BeginStoryboard>
                     </EventTrigger.Actions>                    
-                </EventTrigger>-->
+                </EventTrigger>
             </Style.Triggers>
             <Setter Property="OverridesDefaultStyle" Value="True"/>
             <Setter Property="MinHeight" Value="50"/>
@@ -70,7 +70,7 @@
                             </Rectangle>
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Grid>
-                        <ControlTemplate.Triggers>
+                        <!--<ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
                                 <Trigger.EnterActions>
                                     <BeginStoryboard Name="Storyboard">
@@ -85,7 +85,7 @@
                                     <StopStoryboard BeginStoryboardName="Storyboard"/>
                                 </Trigger.ExitActions>
                             </Trigger>
-                        </ControlTemplate.Triggers>
+                        </ControlTemplate.Triggers>-->
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>

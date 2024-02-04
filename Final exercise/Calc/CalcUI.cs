@@ -550,7 +550,7 @@ namespace SimpleCalculator
             // 
             this.AcceptButton = this.KeyZero;
             this.AutoScaleBaseSize = new System.Drawing.Size(8, 19);
-            this.BackColor = System.Drawing.Color.GhostWhite;
+            this.BackColor = System.Drawing.Color.LightGray;
             this.ClientSize = new System.Drawing.Size(261, 283);
             this.Controls.Add(this.KeyCbrt);
             this.Controls.Add(this.KeyFactorial);
