@@ -158,6 +158,8 @@ namespace SimpleCalculator
             // 
             // VersionInfo
             // 
+            this.VersionInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.VersionInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.VersionInfo.Cursor = System.Windows.Forms.Cursors.No;
             this.VersionInfo.Enabled = false;
@@ -165,7 +167,7 @@ namespace SimpleCalculator
             this.VersionInfo.Location = new System.Drawing.Point(8, 27);
             this.VersionInfo.Name = "VersionInfo";
             this.VersionInfo.ReadOnly = true;
-            this.VersionInfo.Size = new System.Drawing.Size(290, 20);
+            this.VersionInfo.Size = new System.Drawing.Size(248, 20);
             this.VersionInfo.TabIndex = 0;
             this.VersionInfo.TabStop = false;
             this.VersionInfo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -316,13 +318,15 @@ namespace SimpleCalculator
             // 
             // OutputDisplay
             // 
+            this.OutputDisplay.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.OutputDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.OutputDisplay.Enabled = false;
             this.OutputDisplay.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold);
             this.OutputDisplay.Location = new System.Drawing.Point(8, 57);
             this.OutputDisplay.Name = "OutputDisplay";
             this.OutputDisplay.ReadOnly = true;
-            this.OutputDisplay.Size = new System.Drawing.Size(290, 26);
+            this.OutputDisplay.Size = new System.Drawing.Size(248, 26);
             this.OutputDisplay.TabIndex = 1;
             this.OutputDisplay.TabStop = false;
             this.OutputDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -405,7 +409,7 @@ namespace SimpleCalculator
             this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(310, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(261, 24);
             this.menuStrip1.TabIndex = 22;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -421,14 +425,16 @@ namespace SimpleCalculator
             // standardToolStripMenuItem
             // 
             this.standardToolStripMenuItem.Name = "standardToolStripMenuItem";
-            this.standardToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.standardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.standardToolStripMenuItem.Text = "Standard";
+            this.standardToolStripMenuItem.Click += new System.EventHandler(this.standardToolStripMenuItem_Click);
             // 
             // engineerToolStripMenuItem
             // 
             this.engineerToolStripMenuItem.Name = "engineerToolStripMenuItem";
-            this.engineerToolStripMenuItem.Size = new System.Drawing.Size(121, 22);
+            this.engineerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.engineerToolStripMenuItem.Text = "Engineer";
+            this.engineerToolStripMenuItem.Click += new System.EventHandler(this.engineerToolStripMenuItem_Click);
             // 
             // KeyPow
             // 
@@ -440,7 +446,6 @@ namespace SimpleCalculator
             this.KeyPow.TabIndex = 24;
             this.KeyPow.TabStop = false;
             this.KeyPow.Text = "xⁿ";
-            this.KeyPow.Click += new System.EventHandler(this.KeyPow_Click);
             // 
             // KeySqrt
             // 
@@ -480,7 +485,7 @@ namespace SimpleCalculator
             this.AcceptButton = this.KeyZero;
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(310, 277);
+            this.ClientSize = new System.Drawing.Size(261, 275);
             this.Controls.Add(this.KeySquared);
             this.Controls.Add(this.KeyBack);
             this.Controls.Add(this.KeySqrt);
@@ -547,7 +552,7 @@ namespace SimpleCalculator
 
         protected void KeyPow_Click(object sender, EventArgs e)
         {
-            CalcEngine.CalcOperation(CalcEngine.Operator.e);
+            CalcEngine.CalcOperation(CalcEngine.Operator.ePow);
         }
 
         //
@@ -661,6 +666,16 @@ namespace SimpleCalculator
         private void CalcUI_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void standardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Size = new Size(277, 314);
+        }
+
+        private void engineerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Size = new Size(326, 316);
         }
     }
 }
