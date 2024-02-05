@@ -1,10 +1,13 @@
 using System.Reflection;
+using System.Threading;
 
 
 namespace Calculator
 {
+    using Microsoft.SqlServer.Server;
     using System;
     using System.Runtime.Remoting.Messaging;
+    using System.Threading.Tasks;
     using static Calculator.CalcEngine;
 
 	public class CalcEngine
@@ -238,17 +241,17 @@ namespace Calculator
                     if (firstNumber < 0)
 					{
 						validEquation = false;
-						break;
-					}
-					else
+                        break;
+                    }
+                    else
 					{
-                        numericAnswer = 1;
-                        while (firstNumber != 1)
-                        {
-                            numericAnswer = numericAnswer * firstNumber;
-                            firstNumber = firstNumber - 1;
-                        }
-                        validEquation = true;
+						numericAnswer = 1;
+						while (firstNumber != 1)
+						{
+							numericAnswer = numericAnswer * firstNumber;
+							firstNumber = firstNumber - 1;
+						}
+						validEquation = true;
                         break;
                     }
                 case Operator.eCubert:
@@ -264,7 +267,35 @@ namespace Calculator
 			if (validEquation)
 				stringAnswer = Convert.ToString(numericAnswer);
 			return (stringAnswer);
+        }
+		public async static Task<string> CalcFactorial()
+		{
+			double num = firstNumber;
+			double res;
+			if (num < 0)
+			{
+				return await Task.Run(() =>
+				{
+					Thread.Sleep(5000);
+					return Convert.ToString(numericAnswer);
+				});
+            }
 
+			else
+			{
+				return await Task.Run(() =>
+				{
+                    res = 1;
+					while (num != 1)
+					{
+                        res = res * num;
+                        num = num - 1;
+					}
+					Thread.Sleep(5000);
+					return Convert.ToString(res);
+				});					
+			}
+                
 		}
 
         //

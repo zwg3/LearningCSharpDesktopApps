@@ -66,6 +66,7 @@ namespace SimpleCalculator
         private System.Windows.Forms.Button KeyCbrt;
         private ToolStripMenuItem extraToolStripMenuItem;
         private ToolStripMenuItem calculateQuadraticEquationToolStripMenuItem;
+        private System.Windows.Forms.TextBox FactorialOutput;
         private IContainer components;
 
         public CalcUI()
@@ -142,6 +143,7 @@ namespace SimpleCalculator
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.KeyFactorial = new System.Windows.Forms.Button();
             this.KeyCbrt = new System.Windows.Forms.Button();
+            this.FactorialOutput = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -149,7 +151,7 @@ namespace SimpleCalculator
             // 
             this.KeyDate.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyDate.ForeColor = System.Drawing.Color.Blue;
-            this.KeyDate.Location = new System.Drawing.Point(200, 137);
+            this.KeyDate.Location = new System.Drawing.Point(199, 164);
             this.KeyDate.Name = "KeyDate";
             this.KeyDate.Size = new System.Drawing.Size(56, 40);
             this.KeyDate.TabIndex = 19;
@@ -162,7 +164,7 @@ namespace SimpleCalculator
             // 
             this.KeyOne.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyOne.ForeColor = System.Drawing.Color.Blue;
-            this.KeyOne.Location = new System.Drawing.Point(8, 185);
+            this.KeyOne.Location = new System.Drawing.Point(7, 212);
             this.KeyOne.Name = "KeyOne";
             this.KeyOne.Size = new System.Drawing.Size(40, 40);
             this.KeyOne.TabIndex = 2;
@@ -190,7 +192,7 @@ namespace SimpleCalculator
             // 
             this.KeySix.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeySix.ForeColor = System.Drawing.Color.Blue;
-            this.KeySix.Location = new System.Drawing.Point(104, 137);
+            this.KeySix.Location = new System.Drawing.Point(103, 164);
             this.KeySix.Name = "KeySix";
             this.KeySix.Size = new System.Drawing.Size(40, 40);
             this.KeySix.TabIndex = 7;
@@ -202,7 +204,7 @@ namespace SimpleCalculator
             // 
             this.KeyFive.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyFive.ForeColor = System.Drawing.Color.Blue;
-            this.KeyFive.Location = new System.Drawing.Point(56, 137);
+            this.KeyFive.Location = new System.Drawing.Point(55, 164);
             this.KeyFive.Name = "KeyFive";
             this.KeyFive.Size = new System.Drawing.Size(40, 40);
             this.KeyFive.TabIndex = 6;
@@ -214,7 +216,7 @@ namespace SimpleCalculator
             // 
             this.KeyEqual.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyEqual.ForeColor = System.Drawing.Color.Red;
-            this.KeyEqual.Location = new System.Drawing.Point(200, 233);
+            this.KeyEqual.Location = new System.Drawing.Point(199, 260);
             this.KeyEqual.Name = "KeyEqual";
             this.KeyEqual.Size = new System.Drawing.Size(56, 40);
             this.KeyEqual.TabIndex = 18;
@@ -226,7 +228,7 @@ namespace SimpleCalculator
             // 
             this.KeyTwo.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyTwo.ForeColor = System.Drawing.Color.Blue;
-            this.KeyTwo.Location = new System.Drawing.Point(56, 185);
+            this.KeyTwo.Location = new System.Drawing.Point(55, 212);
             this.KeyTwo.Name = "KeyTwo";
             this.KeyTwo.Size = new System.Drawing.Size(40, 40);
             this.KeyTwo.TabIndex = 3;
@@ -238,7 +240,7 @@ namespace SimpleCalculator
             // 
             this.KeyZero.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyZero.ForeColor = System.Drawing.Color.Blue;
-            this.KeyZero.Location = new System.Drawing.Point(8, 233);
+            this.KeyZero.Location = new System.Drawing.Point(7, 260);
             this.KeyZero.Name = "KeyZero";
             this.KeyZero.Size = new System.Drawing.Size(40, 40);
             this.KeyZero.TabIndex = 11;
@@ -250,7 +252,7 @@ namespace SimpleCalculator
             // 
             this.KeyThree.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyThree.ForeColor = System.Drawing.Color.Blue;
-            this.KeyThree.Location = new System.Drawing.Point(104, 185);
+            this.KeyThree.Location = new System.Drawing.Point(103, 212);
             this.KeyThree.Name = "KeyThree";
             this.KeyThree.Size = new System.Drawing.Size(40, 40);
             this.KeyThree.TabIndex = 4;
@@ -262,7 +264,7 @@ namespace SimpleCalculator
             // 
             this.KeyPlus.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyPlus.ForeColor = System.Drawing.Color.Red;
-            this.KeyPlus.Location = new System.Drawing.Point(152, 233);
+            this.KeyPlus.Location = new System.Drawing.Point(151, 260);
             this.KeyPlus.Name = "KeyPlus";
             this.KeyPlus.Size = new System.Drawing.Size(40, 40);
             this.KeyPlus.TabIndex = 12;
@@ -274,7 +276,7 @@ namespace SimpleCalculator
             // 
             this.KeyExit.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyExit.ForeColor = System.Drawing.Color.Red;
-            this.KeyExit.Location = new System.Drawing.Point(200, 185);
+            this.KeyExit.Location = new System.Drawing.Point(199, 212);
             this.KeyExit.Name = "KeyExit";
             this.KeyExit.Size = new System.Drawing.Size(56, 40);
             this.KeyExit.TabIndex = 21;
@@ -287,7 +289,7 @@ namespace SimpleCalculator
             // 
             this.KeySign.Font = new System.Drawing.Font("Courier New", 8F, System.Drawing.FontStyle.Bold);
             this.KeySign.ForeColor = System.Drawing.Color.Blue;
-            this.KeySign.Location = new System.Drawing.Point(104, 233);
+            this.KeySign.Location = new System.Drawing.Point(103, 260);
             this.KeySign.Name = "KeySign";
             this.KeySign.Size = new System.Drawing.Size(40, 40);
             this.KeySign.TabIndex = 16;
@@ -299,7 +301,7 @@ namespace SimpleCalculator
             // 
             this.KeySeven.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeySeven.ForeColor = System.Drawing.Color.Blue;
-            this.KeySeven.Location = new System.Drawing.Point(8, 89);
+            this.KeySeven.Location = new System.Drawing.Point(7, 116);
             this.KeySeven.Name = "KeySeven";
             this.KeySeven.Size = new System.Drawing.Size(40, 40);
             this.KeySeven.TabIndex = 8;
@@ -311,7 +313,7 @@ namespace SimpleCalculator
             // 
             this.KeyPoint.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyPoint.ForeColor = System.Drawing.Color.Blue;
-            this.KeyPoint.Location = new System.Drawing.Point(56, 233);
+            this.KeyPoint.Location = new System.Drawing.Point(55, 260);
             this.KeyPoint.Name = "KeyPoint";
             this.KeyPoint.Size = new System.Drawing.Size(40, 40);
             this.KeyPoint.TabIndex = 17;
@@ -323,7 +325,7 @@ namespace SimpleCalculator
             // 
             this.KeyNine.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyNine.ForeColor = System.Drawing.Color.Blue;
-            this.KeyNine.Location = new System.Drawing.Point(104, 89);
+            this.KeyNine.Location = new System.Drawing.Point(103, 116);
             this.KeyNine.Name = "KeyNine";
             this.KeyNine.Size = new System.Drawing.Size(40, 40);
             this.KeyNine.TabIndex = 10;
@@ -350,7 +352,7 @@ namespace SimpleCalculator
             // 
             this.KeyMinus.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyMinus.ForeColor = System.Drawing.Color.Red;
-            this.KeyMinus.Location = new System.Drawing.Point(152, 185);
+            this.KeyMinus.Location = new System.Drawing.Point(151, 212);
             this.KeyMinus.Name = "KeyMinus";
             this.KeyMinus.Size = new System.Drawing.Size(40, 40);
             this.KeyMinus.TabIndex = 13;
@@ -362,7 +364,7 @@ namespace SimpleCalculator
             // 
             this.KeyEight.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyEight.ForeColor = System.Drawing.Color.Blue;
-            this.KeyEight.Location = new System.Drawing.Point(56, 89);
+            this.KeyEight.Location = new System.Drawing.Point(55, 116);
             this.KeyEight.Name = "KeyEight";
             this.KeyEight.Size = new System.Drawing.Size(40, 40);
             this.KeyEight.TabIndex = 9;
@@ -374,7 +376,7 @@ namespace SimpleCalculator
             // 
             this.KeyMultiply.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyMultiply.ForeColor = System.Drawing.Color.Red;
-            this.KeyMultiply.Location = new System.Drawing.Point(152, 137);
+            this.KeyMultiply.Location = new System.Drawing.Point(151, 164);
             this.KeyMultiply.Name = "KeyMultiply";
             this.KeyMultiply.Size = new System.Drawing.Size(40, 40);
             this.KeyMultiply.TabIndex = 14;
@@ -386,7 +388,7 @@ namespace SimpleCalculator
             // 
             this.KeyFour.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyFour.ForeColor = System.Drawing.Color.Blue;
-            this.KeyFour.Location = new System.Drawing.Point(8, 137);
+            this.KeyFour.Location = new System.Drawing.Point(7, 164);
             this.KeyFour.Name = "KeyFour";
             this.KeyFour.Size = new System.Drawing.Size(40, 40);
             this.KeyFour.TabIndex = 5;
@@ -398,7 +400,7 @@ namespace SimpleCalculator
             // 
             this.KeyClear.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyClear.ForeColor = System.Drawing.Color.Red;
-            this.KeyClear.Location = new System.Drawing.Point(200, 89);
+            this.KeyClear.Location = new System.Drawing.Point(199, 116);
             this.KeyClear.Name = "KeyClear";
             this.KeyClear.Size = new System.Drawing.Size(56, 40);
             this.KeyClear.TabIndex = 20;
@@ -411,7 +413,7 @@ namespace SimpleCalculator
             // 
             this.KeyDivide.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyDivide.ForeColor = System.Drawing.Color.Red;
-            this.KeyDivide.Location = new System.Drawing.Point(152, 89);
+            this.KeyDivide.Location = new System.Drawing.Point(151, 116);
             this.KeyDivide.Name = "KeyDivide";
             this.KeyDivide.Size = new System.Drawing.Size(40, 40);
             this.KeyDivide.TabIndex = 15;
@@ -472,7 +474,7 @@ namespace SimpleCalculator
             // 
             this.KeyPow.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyPow.ForeColor = System.Drawing.Color.Red;
-            this.KeyPow.Location = new System.Drawing.Point(262, 89);
+            this.KeyPow.Location = new System.Drawing.Point(261, 116);
             this.KeyPow.Name = "KeyPow";
             this.KeyPow.Size = new System.Drawing.Size(40, 40);
             this.KeyPow.TabIndex = 24;
@@ -485,7 +487,7 @@ namespace SimpleCalculator
             // 
             this.KeySqrt.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeySqrt.ForeColor = System.Drawing.Color.Red;
-            this.KeySqrt.Location = new System.Drawing.Point(262, 137);
+            this.KeySqrt.Location = new System.Drawing.Point(261, 164);
             this.KeySqrt.Name = "KeySqrt";
             this.KeySqrt.Size = new System.Drawing.Size(40, 40);
             this.KeySqrt.TabIndex = 25;
@@ -498,7 +500,7 @@ namespace SimpleCalculator
             // 
             this.KeyBack.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyBack.ForeColor = System.Drawing.Color.Red;
-            this.KeyBack.Location = new System.Drawing.Point(262, 187);
+            this.KeyBack.Location = new System.Drawing.Point(261, 214);
             this.KeyBack.Name = "KeyBack";
             this.KeyBack.Size = new System.Drawing.Size(40, 40);
             this.KeyBack.TabIndex = 26;
@@ -511,7 +513,7 @@ namespace SimpleCalculator
             // 
             this.KeySquared.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeySquared.ForeColor = System.Drawing.Color.Red;
-            this.KeySquared.Location = new System.Drawing.Point(262, 233);
+            this.KeySquared.Location = new System.Drawing.Point(261, 260);
             this.KeySquared.Name = "KeySquared";
             this.KeySquared.Size = new System.Drawing.Size(40, 40);
             this.KeySquared.TabIndex = 27;
@@ -524,7 +526,7 @@ namespace SimpleCalculator
             // 
             this.KeyFactorial.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyFactorial.ForeColor = System.Drawing.Color.Red;
-            this.KeyFactorial.Location = new System.Drawing.Point(309, 89);
+            this.KeyFactorial.Location = new System.Drawing.Point(308, 116);
             this.KeyFactorial.Name = "KeyFactorial";
             this.KeyFactorial.Size = new System.Drawing.Size(40, 40);
             this.KeyFactorial.TabIndex = 28;
@@ -537,7 +539,7 @@ namespace SimpleCalculator
             // 
             this.KeyCbrt.Font = new System.Drawing.Font("Courier New", 10F, System.Drawing.FontStyle.Bold);
             this.KeyCbrt.ForeColor = System.Drawing.Color.Red;
-            this.KeyCbrt.Location = new System.Drawing.Point(309, 135);
+            this.KeyCbrt.Location = new System.Drawing.Point(308, 162);
             this.KeyCbrt.Name = "KeyCbrt";
             this.KeyCbrt.Size = new System.Drawing.Size(52, 40);
             this.KeyCbrt.TabIndex = 29;
@@ -546,12 +548,28 @@ namespace SimpleCalculator
             this.toolTip1.SetToolTip(this.KeyCbrt, "returns cube root");
             this.KeyCbrt.Click += new System.EventHandler(this.KeyCbrt_Click);
             // 
+            // FactorialOutput
+            // 
+            this.FactorialOutput.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.FactorialOutput.BackColor = System.Drawing.Color.MistyRose;
+            this.FactorialOutput.Enabled = false;
+            this.FactorialOutput.Font = new System.Drawing.Font("Courier New", 8F, System.Drawing.FontStyle.Bold);
+            this.FactorialOutput.Location = new System.Drawing.Point(8, 90);
+            this.FactorialOutput.Name = "FactorialOutput";
+            this.FactorialOutput.ReadOnly = true;
+            this.FactorialOutput.Size = new System.Drawing.Size(248, 20);
+            this.FactorialOutput.TabIndex = 30;
+            this.FactorialOutput.TabStop = false;
+            this.FactorialOutput.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // CalcUI
             // 
             this.AcceptButton = this.KeyZero;
             this.AutoScaleBaseSize = new System.Drawing.Size(8, 19);
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(261, 283);
+            this.ClientSize = new System.Drawing.Size(261, 303);
+            this.Controls.Add(this.FactorialOutput);
             this.Controls.Add(this.KeyCbrt);
             this.Controls.Add(this.KeyFactorial);
             this.Controls.Add(this.KeySquared);
@@ -640,17 +658,19 @@ namespace SimpleCalculator
             OutputDisplay.Text = CalcEngine.CalcEqual2();
             CalcEngine.CalcReset();
         }
-        private void KeyFactorial_Click(object sender, EventArgs e)
-        {
-            CalcEngine.CalcOperation(CalcEngine.Operator.eFactorial);
-            OutputDisplay.Text = CalcEngine.CalcEqual2();
-            CalcEngine.CalcReset();
-        }
         private void KeyCbrt_Click(object sender, EventArgs e)
         {
             CalcEngine.CalcOperation(CalcEngine.Operator.eCubert);
             OutputDisplay.Text = CalcEngine.CalcEqual2();
             CalcEngine.CalcReset();
+        }
+        private async void KeyFactorial_Click(object sender, EventArgs e)
+        {
+            CalcEngine.CalcOperation(CalcEngine.Operator.eFactorial);
+            string res = await CalcEngine.CalcFactorial();
+            FactorialOutput.Text = res;
+            CalcEngine.CalcReset();
+            
         }
 
         private void calculateQuadraticEquationToolStripMenuItem_Click(object sender, EventArgs e)
@@ -696,6 +716,7 @@ namespace SimpleCalculator
 		{
 			CalcEngine.CalcReset();
 			OutputDisplay.Text = "0";
+            FactorialOutput.Text = "0";
 		}
 
 		//
@@ -787,12 +808,12 @@ namespace SimpleCalculator
 
         private void standardToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Size = new Size(277, 322);
+            Size = new Size(277, 342);
         }
 
         private void engineerToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Size = new Size(380, 322);
+            Size = new Size(384, 344);
         }
     }
 }
